@@ -1,2 +1,7 @@
-# ai_for_machine_learning
-AI를 위한 머신러닝 수업자료입니다.
+# Repository for AI4ML class
+
+Author : **Jeong Seo Hyeon**
+
+##Folders##
+- week[1-16] : Excercise notebooks for corresponding weeks
+- practice : Random practice of mine
