@@ -7,4 +7,7 @@ Author : **Jeong Seo Hyeon**
 - practice : Random practice of mine
 
 ## Markdown Practice
-- [Link](https://www.markdowntutorial.com)
+- [Markdown Tutorial](https://www.markdowntutorial.com)
+
+## HomePage Theme
+- [Host a page](https://pages.github.com/themes/)
