@@ -1,0 +1,1072 @@
+2023-12-10 15:00:07,462:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-10 15:00:07,462:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-10 15:00:07,462:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-10 15:00:07,462:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-10 15:00:38,245:WARNING:/opt/homebrew/anaconda3/envs/my_env/lib/python3.10/site-packages/sklearn/experimental/enable_hist_gradient_boosting.py:16: UserWarning: Since version 1.0, it is not needed to import enable_hist_gradient_boosting anymore. HistGradientBoostingClassifier and HistGradientBoostingRegressor are now stable and can be normally imported from sklearn.ensemble.
+  warnings.warn(
+
+2023-12-10 15:01:19,983:INFO:PyCaret ClassificationExperiment
+2023-12-10 15:01:19,984:INFO:Logging name: clf-default-name
+2023-12-10 15:01:19,984:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-12-10 15:01:19,984:INFO:version 3.2.0
+2023-12-10 15:01:19,984:INFO:Initializing setup()
+2023-12-10 15:01:19,984:INFO:self.USI: 0a9b
+2023-12-10 15:01:19,984:INFO:self._variable_keys: {'_ml_usecase', '_available_plots', 'data', 'USI', 'gpu_n_jobs_param', 'target_param', 'memory', 'fold_groups_param', 'y', 'X', 'n_jobs_param', 'y_test', 'seed', 'exp_name_log', 'X_train', 'is_multiclass', 'exp_id', 'html_param', 'fold_shuffle_param', 'pipeline', 'gpu_param', 'idx', 'log_plots_param', 'fold_generator', 'y_train', 'X_test', 'fix_imbalance', 'logging_param'}
+2023-12-10 15:01:19,984:INFO:Checking environment
+2023-12-10 15:01:19,984:INFO:python_version: 3.10.12
+2023-12-10 15:01:19,984:INFO:python_build: ('main', 'Jul  5 2023 15:02:25')
+2023-12-10 15:01:19,984:INFO:machine: arm64
+2023-12-10 15:01:19,985:INFO:platform: macOS-14.1.2-arm64-arm-64bit
+2023-12-10 15:01:19,985:INFO:Memory: svmem(total=34359738368, available=13915652096, percent=59.5, used=16204791808, free=181518336, active=13864452096, inactive=13726564352, wired=2340339712)
+2023-12-10 15:01:19,985:INFO:Physical Core: 12
+2023-12-10 15:01:19,985:INFO:Logical Core: 12
+2023-12-10 15:01:19,985:INFO:Checking libraries
+2023-12-10 15:01:19,985:INFO:System:
+2023-12-10 15:01:19,985:INFO:    python: 3.10.12 (main, Jul  5 2023, 15:02:25) [Clang 14.0.6 ]
+2023-12-10 15:01:19,985:INFO:executable: /opt/homebrew/anaconda3/envs/my_env/bin/python
+2023-12-10 15:01:19,985:INFO:   machine: macOS-14.1.2-arm64-arm-64bit
+2023-12-10 15:01:19,985:INFO:PyCaret required dependencies:
+2023-12-10 15:01:19,986:INFO:                 pip: 23.3.1
+2023-12-10 15:01:19,986:INFO:          setuptools: 67.8.0
+2023-12-10 15:01:19,987:INFO:             pycaret: 3.2.0
+2023-12-10 15:01:19,987:INFO:             IPython: 8.14.0
+2023-12-10 15:01:19,987:INFO:          ipywidgets: 8.0.7
+2023-12-10 15:01:19,987:INFO:                tqdm: 4.65.0
+2023-12-10 15:01:19,987:INFO:               numpy: 1.25.1
+2023-12-10 15:01:19,987:INFO:              pandas: 1.5.3
+2023-12-10 15:01:19,987:INFO:              jinja2: 3.1.2
+2023-12-10 15:01:19,987:INFO:               scipy: 1.10.1
+2023-12-10 15:01:19,987:INFO:              joblib: 1.2.0
+2023-12-10 15:01:19,987:INFO:             sklearn: 1.2.2
+2023-12-10 15:01:19,987:INFO:                pyod: 1.1.1
+2023-12-10 15:01:19,987:INFO:            imblearn: 0.11.0
+2023-12-10 15:01:19,987:INFO:   category_encoders: 2.6.3
+2023-12-10 15:01:19,987:INFO:            lightgbm: 4.1.0
+2023-12-10 15:01:19,987:INFO:               numba: 0.58.1
+2023-12-10 15:01:19,987:INFO:            requests: 2.31.0
+2023-12-10 15:01:19,987:INFO:          matplotlib: 3.6.0
+2023-12-10 15:01:19,987:INFO:          scikitplot: 0.3.7
+2023-12-10 15:01:19,987:INFO:         yellowbrick: 1.5
+2023-12-10 15:01:19,987:INFO:              plotly: 5.18.0
+2023-12-10 15:01:19,987:INFO:    plotly-resampler: Not installed
+2023-12-10 15:01:19,987:INFO:             kaleido: 0.2.1
+2023-12-10 15:01:19,987:INFO:           schemdraw: 0.15
+2023-12-10 15:01:19,987:INFO:         statsmodels: 0.14.0
+2023-12-10 15:01:19,987:INFO:              sktime: 0.21.1
+2023-12-10 15:01:19,987:INFO:               tbats: 1.1.3
+2023-12-10 15:01:19,987:INFO:            pmdarima: 2.0.4
+2023-12-10 15:01:19,987:INFO:              psutil: 5.9.5
+2023-12-10 15:01:19,987:INFO:          markupsafe: 2.1.3
+2023-12-10 15:01:19,987:INFO:             pickle5: Not installed
+2023-12-10 15:01:19,987:INFO:         cloudpickle: 3.0.0
+2023-12-10 15:01:19,987:INFO:         deprecation: 2.1.0
+2023-12-10 15:01:19,987:INFO:              xxhash: 3.4.1
+2023-12-10 15:01:19,987:INFO:           wurlitzer: 3.0.3
+2023-12-10 15:01:19,987:INFO:PyCaret optional dependencies:
+2023-12-10 15:01:20,000:INFO:                shap: 0.43.0
+2023-12-10 15:01:20,000:INFO:           interpret: Not installed
+2023-12-10 15:01:20,000:INFO:                umap: Not installed
+2023-12-10 15:01:20,000:INFO:     ydata_profiling: Not installed
+2023-12-10 15:01:20,000:INFO:  explainerdashboard: Not installed
+2023-12-10 15:01:20,000:INFO:             autoviz: Not installed
+2023-12-10 15:01:20,000:INFO:           fairlearn: Not installed
+2023-12-10 15:01:20,000:INFO:          deepchecks: Not installed
+2023-12-10 15:01:20,000:INFO:             xgboost: 2.0.2
+2023-12-10 15:01:20,000:INFO:            catboost: 1.2.2
+2023-12-10 15:01:20,000:INFO:              kmodes: Not installed
+2023-12-10 15:01:20,000:INFO:             mlxtend: Not installed
+2023-12-10 15:01:20,000:INFO:       statsforecast: Not installed
+2023-12-10 15:01:20,000:INFO:        tune_sklearn: Not installed
+2023-12-10 15:01:20,000:INFO:                 ray: Not installed
+2023-12-10 15:01:20,000:INFO:            hyperopt: Not installed
+2023-12-10 15:01:20,000:INFO:              optuna: 3.4.0
+2023-12-10 15:01:20,000:INFO:               skopt: 0.9.0
+2023-12-10 15:01:20,000:INFO:              mlflow: Not installed
+2023-12-10 15:01:20,000:INFO:              gradio: Not installed
+2023-12-10 15:01:20,000:INFO:             fastapi: Not installed
+2023-12-10 15:01:20,000:INFO:             uvicorn: Not installed
+2023-12-10 15:01:20,000:INFO:              m2cgen: Not installed
+2023-12-10 15:01:20,000:INFO:           evidently: Not installed
+2023-12-10 15:01:20,001:INFO:               fugue: Not installed
+2023-12-10 15:01:20,001:INFO:           streamlit: 1.27.2
+2023-12-10 15:01:20,001:INFO:             prophet: Not installed
+2023-12-10 15:01:20,001:INFO:None
+2023-12-10 15:01:20,001:INFO:Set up data.
+2023-12-10 15:01:20,597:INFO:Set up folding strategy.
+2023-12-10 15:01:20,597:INFO:Set up train/test split.
+2023-12-10 15:01:20,898:INFO:Set up index.
+2023-12-10 15:01:20,908:INFO:Assigning column types.
+2023-12-10 15:01:21,057:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-12-10 15:01:21,073:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-12-10 15:01:21,073:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-12-10 15:01:21,087:INFO:Soft dependency imported: xgboost: 2.0.2
+2023-12-10 15:01:21,088:INFO:Soft dependency imported: catboost: 1.2.2
+2023-12-10 15:01:21,104:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-12-10 15:01:21,104:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-12-10 15:01:21,114:INFO:Soft dependency imported: xgboost: 2.0.2
+2023-12-10 15:01:21,115:INFO:Soft dependency imported: catboost: 1.2.2
+2023-12-10 15:01:21,116:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-12-10 15:01:21,132:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-12-10 15:01:21,142:INFO:Soft dependency imported: xgboost: 2.0.2
+2023-12-10 15:01:21,143:INFO:Soft dependency imported: catboost: 1.2.2
+2023-12-10 15:01:21,160:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-12-10 15:01:21,170:INFO:Soft dependency imported: xgboost: 2.0.2
+2023-12-10 15:01:21,171:INFO:Soft dependency imported: catboost: 1.2.2
+2023-12-10 15:01:21,171:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-12-10 15:01:21,197:INFO:Soft dependency imported: xgboost: 2.0.2
+2023-12-10 15:01:21,198:INFO:Soft dependency imported: catboost: 1.2.2
+2023-12-10 15:01:21,225:INFO:Soft dependency imported: xgboost: 2.0.2
+2023-12-10 15:01:21,226:INFO:Soft dependency imported: catboost: 1.2.2
+2023-12-10 15:01:21,228:INFO:Preparing preprocessing pipeline...
+2023-12-10 15:01:21,251:INFO:Set up simple imputation.
+2023-12-10 15:01:21,252:INFO:Set up removing multicollinearity.
+2023-12-10 15:01:21,269:INFO:Set up column name cleaning.
+2023-12-10 15:01:22,213:INFO:Finished creating preprocessing pipeline.
+2023-12-10 15:01:22,216:INFO:Pipeline: Pipeline(memory=FastMemory(location=/var/folders/fw/v4x3fkk94qvbl08b9n5jw7w40000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HD...
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent',
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2023-12-10 15:01:22,216:INFO:Creating final display dataframe.
+2023-12-10 15:01:23,212:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target           smoking
+2                   Target type            Binary
+3           Original data shape     (192723, 377)
+4        Transformed data shape     (192723, 357)
+5   Transformed train set shape     (154178, 357)
+6    Transformed test set shape      (38545, 357)
+7              Numeric features               376
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12     Remove multicollinearity              True
+13  Multicollinearity threshold               0.9
+14               Fold Generator   StratifiedKFold
+15                  Fold Number                10
+16                     CPU Jobs                -1
+17                      Use GPU             False
+18               Log Experiment             False
+19              Experiment Name  clf-default-name
+20                          USI              0a9b
+2023-12-10 15:01:23,244:INFO:Soft dependency imported: xgboost: 2.0.2
+2023-12-10 15:01:23,245:INFO:Soft dependency imported: catboost: 1.2.2
+2023-12-10 15:01:23,272:INFO:Soft dependency imported: xgboost: 2.0.2
+2023-12-10 15:01:23,273:INFO:Soft dependency imported: catboost: 1.2.2
+2023-12-10 15:01:23,274:INFO:setup() successfully completed in 3.29s...............
+2023-12-10 15:01:32,955:INFO:gpu_param set to False
+2023-12-10 15:01:32,987:INFO:Soft dependency imported: xgboost: 2.0.2
+2023-12-10 15:01:32,988:INFO:Soft dependency imported: catboost: 1.2.2
+2023-12-10 15:01:33,017:INFO:Soft dependency imported: xgboost: 2.0.2
+2023-12-10 15:01:33,018:INFO:Soft dependency imported: catboost: 1.2.2
+2023-12-10 15:01:45,664:INFO:Initializing compare_models()
+2023-12-10 15:01:45,664:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, include=['et', 'xgboost', 'lightgbm', 'catboost', 'gbc', 'rf', 'ada', 'dt'], fold=None, round=4, cross_validation=True, sort=AUC, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, 'include': ['et', 'xgboost', 'lightgbm', 'catboost', 'gbc', 'rf', 'ada', 'dt'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'AUC', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2023-12-10 15:01:45,664:INFO:Checking exceptions
+2023-12-10 15:01:45,799:INFO:Preparing display monitor
+2023-12-10 15:01:45,808:INFO:Initializing Extra Trees Classifier
+2023-12-10 15:01:45,808:INFO:Total runtime is 2.2331873575846355e-06 minutes
+2023-12-10 15:01:45,809:INFO:SubProcess create_model() called ==================================
+2023-12-10 15:01:45,809:INFO:Initializing create_model()
+2023-12-10 15:01:45,809:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x2860d1570>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 15:01:45,809:INFO:Checking exceptions
+2023-12-10 15:01:45,809:INFO:Importing libraries
+2023-12-10 15:01:45,809:INFO:Copying training dataset
+2023-12-10 15:01:46,039:INFO:Defining folds
+2023-12-10 15:01:46,039:INFO:Declaring metric variables
+2023-12-10 15:01:46,040:INFO:Importing untrained model
+2023-12-10 15:01:46,042:INFO:Extra Trees Classifier Imported successfully
+2023-12-10 15:01:46,044:INFO:Starting cross validation
+2023-12-10 15:01:46,045:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 15:03:28,510:INFO:Calculating mean and std
+2023-12-10 15:03:28,513:INFO:Creating metrics dataframe
+2023-12-10 15:03:28,518:INFO:Uploading results into container
+2023-12-10 15:03:28,519:INFO:Uploading model into container now
+2023-12-10 15:03:28,520:INFO:_master_model_container: 1
+2023-12-10 15:03:28,520:INFO:_display_container: 2
+2023-12-10 15:03:28,520:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=42, verbose=0, warm_start=False)
+2023-12-10 15:03:28,520:INFO:create_model() successfully completed......................................
+2023-12-10 15:03:28,615:INFO:SubProcess create_model() end ==================================
+2023-12-10 15:03:28,615:INFO:Creating metrics dataframe
+2023-12-10 15:03:28,619:INFO:Initializing Extreme Gradient Boosting
+2023-12-10 15:03:28,619:INFO:Total runtime is 1.7135298013687132 minutes
+2023-12-10 15:03:28,621:INFO:SubProcess create_model() called ==================================
+2023-12-10 15:03:28,621:INFO:Initializing create_model()
+2023-12-10 15:03:28,621:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=xgboost, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x2860d1570>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 15:03:28,621:INFO:Checking exceptions
+2023-12-10 15:03:28,621:INFO:Importing libraries
+2023-12-10 15:03:28,621:INFO:Copying training dataset
+2023-12-10 15:03:28,992:INFO:Defining folds
+2023-12-10 15:03:28,992:INFO:Declaring metric variables
+2023-12-10 15:03:28,993:INFO:Importing untrained model
+2023-12-10 15:03:28,995:INFO:Extreme Gradient Boosting Imported successfully
+2023-12-10 15:03:28,998:INFO:Starting cross validation
+2023-12-10 15:03:28,999:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 15:04:24,922:INFO:Calculating mean and std
+2023-12-10 15:04:24,924:INFO:Creating metrics dataframe
+2023-12-10 15:04:24,928:INFO:Uploading results into container
+2023-12-10 15:04:24,929:INFO:Uploading model into container now
+2023-12-10 15:04:24,929:INFO:_master_model_container: 2
+2023-12-10 15:04:24,929:INFO:_display_container: 2
+2023-12-10 15:04:24,930:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='binary:logistic', ...)
+2023-12-10 15:04:24,930:INFO:create_model() successfully completed......................................
+2023-12-10 15:04:25,009:INFO:SubProcess create_model() end ==================================
+2023-12-10 15:04:25,009:INFO:Creating metrics dataframe
+2023-12-10 15:04:25,014:INFO:Initializing Light Gradient Boosting Machine
+2023-12-10 15:04:25,014:INFO:Total runtime is 2.6534405986467995 minutes
+2023-12-10 15:04:25,015:INFO:SubProcess create_model() called ==================================
+2023-12-10 15:04:25,016:INFO:Initializing create_model()
+2023-12-10 15:04:25,016:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x2860d1570>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 15:04:25,016:INFO:Checking exceptions
+2023-12-10 15:04:25,016:INFO:Importing libraries
+2023-12-10 15:04:25,016:INFO:Copying training dataset
+2023-12-10 15:04:25,361:INFO:Defining folds
+2023-12-10 15:04:25,362:INFO:Declaring metric variables
+2023-12-10 15:04:25,363:INFO:Importing untrained model
+2023-12-10 15:04:25,365:INFO:Light Gradient Boosting Machine Imported successfully
+2023-12-10 15:04:25,367:INFO:Starting cross validation
+2023-12-10 15:04:25,369:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 15:05:24,580:INFO:Calculating mean and std
+2023-12-10 15:05:24,582:INFO:Creating metrics dataframe
+2023-12-10 15:05:24,586:INFO:Uploading results into container
+2023-12-10 15:05:24,586:INFO:Uploading model into container now
+2023-12-10 15:05:24,587:INFO:_master_model_container: 3
+2023-12-10 15:05:24,587:INFO:_display_container: 2
+2023-12-10 15:05:24,587:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2023-12-10 15:05:24,587:INFO:create_model() successfully completed......................................
+2023-12-10 15:05:24,677:INFO:SubProcess create_model() end ==================================
+2023-12-10 15:05:24,677:INFO:Creating metrics dataframe
+2023-12-10 15:05:24,682:INFO:Initializing CatBoost Classifier
+2023-12-10 15:05:24,682:INFO:Total runtime is 3.6479030172030127 minutes
+2023-12-10 15:05:24,683:INFO:SubProcess create_model() called ==================================
+2023-12-10 15:05:24,683:INFO:Initializing create_model()
+2023-12-10 15:05:24,683:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=catboost, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x2860d1570>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 15:05:24,684:INFO:Checking exceptions
+2023-12-10 15:05:24,684:INFO:Importing libraries
+2023-12-10 15:05:24,684:INFO:Copying training dataset
+2023-12-10 15:05:24,973:INFO:Defining folds
+2023-12-10 15:05:24,973:INFO:Declaring metric variables
+2023-12-10 15:05:24,974:INFO:Importing untrained model
+2023-12-10 15:05:24,976:INFO:CatBoost Classifier Imported successfully
+2023-12-10 15:05:24,979:INFO:Starting cross validation
+2023-12-10 15:05:24,980:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 15:07:20,271:INFO:Calculating mean and std
+2023-12-10 15:07:20,275:INFO:Creating metrics dataframe
+2023-12-10 15:07:20,280:INFO:Uploading results into container
+2023-12-10 15:07:20,280:INFO:Uploading model into container now
+2023-12-10 15:07:20,281:INFO:_master_model_container: 4
+2023-12-10 15:07:20,281:INFO:_display_container: 2
+2023-12-10 15:07:20,281:INFO:<catboost.core.CatBoostClassifier object at 0x299fb7490>
+2023-12-10 15:07:20,281:INFO:create_model() successfully completed......................................
+2023-12-10 15:07:20,369:INFO:SubProcess create_model() end ==================================
+2023-12-10 15:07:20,369:INFO:Creating metrics dataframe
+2023-12-10 15:07:20,373:INFO:Initializing Gradient Boosting Classifier
+2023-12-10 15:07:20,374:INFO:Total runtime is 5.576101152102153 minutes
+2023-12-10 15:07:20,375:INFO:SubProcess create_model() called ==================================
+2023-12-10 15:07:20,375:INFO:Initializing create_model()
+2023-12-10 15:07:20,375:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x2860d1570>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 15:07:20,375:INFO:Checking exceptions
+2023-12-10 15:07:20,375:INFO:Importing libraries
+2023-12-10 15:07:20,375:INFO:Copying training dataset
+2023-12-10 15:07:20,696:INFO:Defining folds
+2023-12-10 15:07:20,696:INFO:Declaring metric variables
+2023-12-10 15:07:20,697:INFO:Importing untrained model
+2023-12-10 15:07:20,699:INFO:Gradient Boosting Classifier Imported successfully
+2023-12-10 15:07:20,702:INFO:Starting cross validation
+2023-12-10 15:07:20,703:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 15:10:41,408:INFO:Calculating mean and std
+2023-12-10 15:10:41,411:INFO:Creating metrics dataframe
+2023-12-10 15:10:41,415:INFO:Uploading results into container
+2023-12-10 15:10:41,416:INFO:Uploading model into container now
+2023-12-10 15:10:41,416:INFO:_master_model_container: 5
+2023-12-10 15:10:41,416:INFO:_display_container: 2
+2023-12-10 15:10:41,417:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=42, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2023-12-10 15:10:41,417:INFO:create_model() successfully completed......................................
+2023-12-10 15:10:41,510:INFO:SubProcess create_model() end ==================================
+2023-12-10 15:10:41,510:INFO:Creating metrics dataframe
+2023-12-10 15:10:41,515:INFO:Initializing Random Forest Classifier
+2023-12-10 15:10:41,515:INFO:Total runtime is 8.928450151284537 minutes
+2023-12-10 15:10:41,516:INFO:SubProcess create_model() called ==================================
+2023-12-10 15:10:41,516:INFO:Initializing create_model()
+2023-12-10 15:10:41,516:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x2860d1570>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 15:10:41,516:INFO:Checking exceptions
+2023-12-10 15:10:41,516:INFO:Importing libraries
+2023-12-10 15:10:41,516:INFO:Copying training dataset
+2023-12-10 15:10:41,888:INFO:Defining folds
+2023-12-10 15:10:41,888:INFO:Declaring metric variables
+2023-12-10 15:10:41,890:INFO:Importing untrained model
+2023-12-10 15:10:41,891:INFO:Random Forest Classifier Imported successfully
+2023-12-10 15:10:41,894:INFO:Starting cross validation
+2023-12-10 15:10:41,895:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 15:12:11,270:INFO:Calculating mean and std
+2023-12-10 15:12:11,418:INFO:Creating metrics dataframe
+2023-12-10 15:12:11,422:INFO:Uploading results into container
+2023-12-10 15:12:11,423:INFO:Uploading model into container now
+2023-12-10 15:12:11,423:INFO:_master_model_container: 6
+2023-12-10 15:12:11,423:INFO:_display_container: 2
+2023-12-10 15:12:11,424:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=42, verbose=0, warm_start=False)
+2023-12-10 15:12:11,424:INFO:create_model() successfully completed......................................
+2023-12-10 15:12:11,511:INFO:SubProcess create_model() end ==================================
+2023-12-10 15:12:11,512:INFO:Creating metrics dataframe
+2023-12-10 15:12:11,517:INFO:Initializing Ada Boost Classifier
+2023-12-10 15:12:11,517:INFO:Total runtime is 10.428488536675772 minutes
+2023-12-10 15:12:11,518:INFO:SubProcess create_model() called ==================================
+2023-12-10 15:12:11,518:INFO:Initializing create_model()
+2023-12-10 15:12:11,518:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x2860d1570>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 15:12:11,519:INFO:Checking exceptions
+2023-12-10 15:12:11,519:INFO:Importing libraries
+2023-12-10 15:12:11,519:INFO:Copying training dataset
+2023-12-10 15:12:11,882:INFO:Defining folds
+2023-12-10 15:12:11,882:INFO:Declaring metric variables
+2023-12-10 15:12:11,884:INFO:Importing untrained model
+2023-12-10 15:12:11,885:INFO:Ada Boost Classifier Imported successfully
+2023-12-10 15:12:11,888:INFO:Starting cross validation
+2023-12-10 15:12:11,889:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 15:13:22,241:INFO:Calculating mean and std
+2023-12-10 15:13:23,110:INFO:Creating metrics dataframe
+2023-12-10 15:13:23,114:INFO:Uploading results into container
+2023-12-10 15:13:23,115:INFO:Uploading model into container now
+2023-12-10 15:13:23,115:INFO:_master_model_container: 7
+2023-12-10 15:13:23,115:INFO:_display_container: 2
+2023-12-10 15:13:23,116:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator='deprecated',
+                   estimator=None, learning_rate=1.0, n_estimators=50,
+                   random_state=42)
+2023-12-10 15:13:23,116:INFO:create_model() successfully completed......................................
+2023-12-10 15:13:23,193:INFO:SubProcess create_model() end ==================================
+2023-12-10 15:13:23,193:INFO:Creating metrics dataframe
+2023-12-10 15:13:23,198:INFO:Initializing Decision Tree Classifier
+2023-12-10 15:13:23,198:INFO:Total runtime is 11.62317303021749 minutes
+2023-12-10 15:13:23,199:INFO:SubProcess create_model() called ==================================
+2023-12-10 15:13:23,200:INFO:Initializing create_model()
+2023-12-10 15:13:23,200:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x2860d1570>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 15:13:23,200:INFO:Checking exceptions
+2023-12-10 15:13:23,200:INFO:Importing libraries
+2023-12-10 15:13:23,200:INFO:Copying training dataset
+2023-12-10 15:13:23,505:INFO:Defining folds
+2023-12-10 15:13:23,505:INFO:Declaring metric variables
+2023-12-10 15:13:23,507:INFO:Importing untrained model
+2023-12-10 15:13:23,508:INFO:Decision Tree Classifier Imported successfully
+2023-12-10 15:13:23,511:INFO:Starting cross validation
+2023-12-10 15:13:23,513:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 15:14:18,062:INFO:Calculating mean and std
+2023-12-10 15:14:18,065:INFO:Creating metrics dataframe
+2023-12-10 15:14:18,071:INFO:Uploading results into container
+2023-12-10 15:14:18,072:INFO:Uploading model into container now
+2023-12-10 15:14:18,072:INFO:_master_model_container: 8
+2023-12-10 15:14:18,072:INFO:_display_container: 2
+2023-12-10 15:14:18,073:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=42, splitter='best')
+2023-12-10 15:14:18,073:INFO:create_model() successfully completed......................................
+2023-12-10 15:14:18,168:INFO:SubProcess create_model() end ==================================
+2023-12-10 15:14:18,168:INFO:Creating metrics dataframe
+2023-12-10 15:14:18,177:INFO:Initializing create_model()
+2023-12-10 15:14:18,177:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x299fb7490>, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 15:14:18,177:INFO:Checking exceptions
+2023-12-10 15:14:18,178:INFO:Importing libraries
+2023-12-10 15:14:18,178:INFO:Copying training dataset
+2023-12-10 15:14:18,558:INFO:Defining folds
+2023-12-10 15:14:18,558:INFO:Declaring metric variables
+2023-12-10 15:14:18,558:INFO:Importing untrained model
+2023-12-10 15:14:18,558:INFO:Declaring custom model
+2023-12-10 15:14:18,558:INFO:CatBoost Classifier Imported successfully
+2023-12-10 15:14:18,559:INFO:Cross validation set to False
+2023-12-10 15:14:18,559:INFO:Fitting Model
+2023-12-10 15:15:07,531:INFO:<catboost.core.CatBoostClassifier object at 0x28713b8b0>
+2023-12-10 15:15:07,531:INFO:create_model() successfully completed......................................
+2023-12-10 15:15:07,589:INFO:_master_model_container: 8
+2023-12-10 15:15:07,589:INFO:_display_container: 2
+2023-12-10 15:15:07,589:INFO:<catboost.core.CatBoostClassifier object at 0x28713b8b0>
+2023-12-10 15:15:07,589:INFO:compare_models() successfully completed......................................
+2023-12-10 15:15:07,635:INFO:Initializing create_model()
+2023-12-10 15:15:07,635:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 15:15:07,635:INFO:Checking exceptions
+2023-12-10 15:15:07,641:INFO:Importing libraries
+2023-12-10 15:15:07,641:INFO:Copying training dataset
+2023-12-10 15:15:07,891:INFO:Defining folds
+2023-12-10 15:15:07,891:INFO:Declaring metric variables
+2023-12-10 15:15:07,892:INFO:Importing untrained model
+2023-12-10 15:15:07,894:INFO:CatBoost Classifier Imported successfully
+2023-12-10 15:15:07,897:INFO:Starting cross validation
+2023-12-10 15:15:07,898:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 15:33:08,436:INFO:Calculating mean and std
+2023-12-10 15:33:08,439:INFO:Creating metrics dataframe
+2023-12-10 15:33:08,447:INFO:Finalizing model
+2023-12-10 15:33:56,349:INFO:Uploading results into container
+2023-12-10 15:33:56,349:INFO:Uploading model into container now
+2023-12-10 15:33:56,354:INFO:_master_model_container: 9
+2023-12-10 15:33:56,354:INFO:_display_container: 3
+2023-12-10 15:33:56,354:INFO:<catboost.core.CatBoostClassifier object at 0x29e1b7fd0>
+2023-12-10 15:33:56,354:INFO:create_model() successfully completed......................................
+2023-12-10 15:33:56,464:INFO:Initializing predict_model()
+2023-12-10 15:33:56,465:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x29e1b7fd0>, probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x29e14b1c0>)
+2023-12-10 15:33:56,465:INFO:Checking exceptions
+2023-12-10 15:33:56,465:INFO:Preloading libraries
+2023-12-10 15:33:56,466:INFO:Set up data.
+2023-12-10 15:33:57,245:INFO:Set up index.
+2023-12-10 15:33:58,269:INFO:Initializing plot_model()
+2023-12-10 15:33:58,269:INFO:plot_model(plot=auc, fold=None, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x29e1b7fd0>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, system=True)
+2023-12-10 15:33:58,269:INFO:Checking exceptions
+2023-12-10 15:33:58,402:INFO:Preloading libraries
+2023-12-10 15:33:58,403:INFO:Copying training dataset
+2023-12-10 15:33:58,403:INFO:Plot type: auc
+2023-12-10 15:33:59,002:INFO:Fitting Model
+2023-12-10 15:33:59,008:INFO:Scoring test/hold-out set
+2023-12-10 15:33:59,325:INFO:Visual Rendered Successfully
+2023-12-10 15:33:59,385:INFO:plot_model() successfully completed......................................
+2023-12-10 15:33:59,396:INFO:Initializing plot_model()
+2023-12-10 15:33:59,396:INFO:plot_model(plot=class_report, fold=None, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x29e1b7fd0>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, system=True)
+2023-12-10 15:33:59,396:INFO:Checking exceptions
+2023-12-10 15:33:59,480:INFO:Preloading libraries
+2023-12-10 15:33:59,481:INFO:Copying training dataset
+2023-12-10 15:33:59,481:INFO:Plot type: class_report
+2023-12-10 15:34:00,057:INFO:Fitting Model
+2023-12-10 15:34:00,060:INFO:Scoring test/hold-out set
+2023-12-10 15:34:00,193:INFO:Visual Rendered Successfully
+2023-12-10 15:34:00,239:INFO:plot_model() successfully completed......................................
+2023-12-10 15:34:00,252:INFO:Initializing plot_model()
+2023-12-10 15:34:00,252:INFO:plot_model(plot=confusion_matrix, fold=None, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x29e1b7fd0>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, system=True)
+2023-12-10 15:34:00,252:INFO:Checking exceptions
+2023-12-10 15:34:00,331:INFO:Preloading libraries
+2023-12-10 15:34:00,332:INFO:Copying training dataset
+2023-12-10 15:34:00,332:INFO:Plot type: confusion_matrix
+2023-12-10 15:34:00,946:INFO:Fitting Model
+2023-12-10 15:34:00,949:INFO:Scoring test/hold-out set
+2023-12-10 15:34:01,050:INFO:Visual Rendered Successfully
+2023-12-10 15:34:01,096:INFO:plot_model() successfully completed......................................
+2023-12-10 15:34:01,110:INFO:Initializing finalize_model()
+2023-12-10 15:34:01,110:INFO:finalize_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x29e1b7fd0>, fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2023-12-10 15:34:01,110:INFO:Finalizing <catboost.core.CatBoostClassifier object at 0x29e1b7fd0>
+2023-12-10 15:34:01,210:INFO:Initializing create_model()
+2023-12-10 15:34:01,210:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x29e1b7fd0>, fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 15:34:01,210:INFO:Checking exceptions
+2023-12-10 15:34:01,211:INFO:Importing libraries
+2023-12-10 15:34:01,211:INFO:Copying training dataset
+2023-12-10 15:34:01,229:INFO:Defining folds
+2023-12-10 15:34:01,229:INFO:Declaring metric variables
+2023-12-10 15:34:01,229:INFO:Importing untrained model
+2023-12-10 15:34:01,229:INFO:Declaring custom model
+2023-12-10 15:34:01,229:INFO:CatBoost Classifier Imported successfully
+2023-12-10 15:34:01,230:INFO:Cross validation set to False
+2023-12-10 15:34:01,230:INFO:Fitting Model
+2023-12-10 15:36:12,811:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HDL', 'LDL', 'hemoglobin',
+                                             'Urine protein',
+                                             'serum creatinine',...
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+'))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x299faa470>)],
+         verbose=False)
+2023-12-10 15:36:12,811:INFO:create_model() successfully completed......................................
+2023-12-10 15:36:12,867:INFO:_master_model_container: 9
+2023-12-10 15:36:12,867:INFO:_display_container: 4
+2023-12-10 15:36:12,870:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HDL', 'LDL', 'hemoglobin',
+                                             'Urine protein',
+                                             'serum creatinine',...
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+'))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x299faa470>)],
+         verbose=False)
+2023-12-10 15:36:12,870:INFO:finalize_model() successfully completed......................................
+2023-12-10 15:36:12,962:INFO:Initializing predict_model()
+2023-12-10 15:36:12,962:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HDL', 'LDL', 'hemoglobin',
+                                             'Urine protein',
+                                             'serum creatinine',...
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+'))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x299faa470>)],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x29e14b7f0>)
+2023-12-10 15:36:12,962:INFO:Checking exceptions
+2023-12-10 15:36:12,962:INFO:Preloading libraries
+2023-12-10 15:36:12,964:INFO:Set up data.
+2023-12-10 15:36:13,543:INFO:Set up index.
+2023-12-10 15:36:15,182:INFO:Initializing tune_model()
+2023-12-10 15:36:15,182:INFO:tune_model(estimator=<catboost.core.CatBoostClassifier object at 0x29e1b7fd0>, fold=None, round=4, n_iter=20, custom_grid=None, optimize=AUC, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>)
+2023-12-10 15:36:15,182:INFO:Checking exceptions
+2023-12-10 15:36:15,285:INFO:Copying training dataset
+2023-12-10 15:36:15,428:INFO:Checking base model
+2023-12-10 15:36:15,428:INFO:Base model : CatBoost Classifier
+2023-12-10 15:36:15,429:INFO:Declaring metric variables
+2023-12-10 15:36:15,431:INFO:Defining Hyperparameters
+2023-12-10 15:36:15,474:INFO:Tuning with n_jobs=-1
+2023-12-10 15:36:15,474:INFO:Initializing RandomizedSearchCV
+2023-12-10 15:52:13,034:INFO:best_params: {'actual_estimator__random_strength': 0.0, 'actual_estimator__n_estimators': 120, 'actual_estimator__l2_leaf_reg': 30, 'actual_estimator__eta': 0.2, 'actual_estimator__depth': 6}
+2023-12-10 15:52:13,037:INFO:Hyperparameter search completed
+2023-12-10 15:52:13,037:INFO:SubProcess create_model() called ==================================
+2023-12-10 15:52:13,038:INFO:Initializing create_model()
+2023-12-10 15:52:13,038:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x29cdeb160>, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x2872dedd0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'random_strength': 0.0, 'n_estimators': 120, 'l2_leaf_reg': 30, 'eta': 0.2, 'depth': 6})
+2023-12-10 15:52:13,038:INFO:Checking exceptions
+2023-12-10 15:52:13,038:INFO:Importing libraries
+2023-12-10 15:52:13,038:INFO:Copying training dataset
+2023-12-10 15:52:13,335:INFO:Defining folds
+2023-12-10 15:52:13,336:INFO:Declaring metric variables
+2023-12-10 15:52:13,339:INFO:Importing untrained model
+2023-12-10 15:52:13,339:INFO:Declaring custom model
+2023-12-10 15:52:13,341:INFO:CatBoost Classifier Imported successfully
+2023-12-10 15:52:13,343:INFO:Starting cross validation
+2023-12-10 15:52:13,345:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 15:53:03,254:INFO:Calculating mean and std
+2023-12-10 15:53:03,258:INFO:Creating metrics dataframe
+2023-12-10 15:53:03,265:INFO:Finalizing model
+2023-12-10 15:53:41,151:INFO:Uploading results into container
+2023-12-10 15:53:41,152:INFO:Uploading model into container now
+2023-12-10 15:53:41,152:INFO:_master_model_container: 10
+2023-12-10 15:53:41,152:INFO:_display_container: 6
+2023-12-10 15:53:41,152:INFO:<catboost.core.CatBoostClassifier object at 0x29e122fb0>
+2023-12-10 15:53:41,152:INFO:create_model() successfully completed......................................
+2023-12-10 15:53:41,235:INFO:SubProcess create_model() end ==================================
+2023-12-10 15:53:41,235:INFO:choose_better activated
+2023-12-10 15:53:41,237:INFO:SubProcess create_model() called ==================================
+2023-12-10 15:53:41,237:INFO:Initializing create_model()
+2023-12-10 15:53:41,237:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x29e1b7fd0>, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 15:53:41,238:INFO:Checking exceptions
+2023-12-10 15:53:41,238:INFO:Importing libraries
+2023-12-10 15:53:41,238:INFO:Copying training dataset
+2023-12-10 15:53:41,539:INFO:Defining folds
+2023-12-10 15:53:41,539:INFO:Declaring metric variables
+2023-12-10 15:53:41,539:INFO:Importing untrained model
+2023-12-10 15:53:41,539:INFO:Declaring custom model
+2023-12-10 15:53:41,539:INFO:CatBoost Classifier Imported successfully
+2023-12-10 15:53:41,539:INFO:Starting cross validation
+2023-12-10 15:53:41,541:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 16:01:54,724:INFO:Calculating mean and std
+2023-12-10 16:01:54,726:INFO:Creating metrics dataframe
+2023-12-10 16:01:54,730:INFO:Finalizing model
+2023-12-10 16:02:43,730:INFO:Uploading results into container
+2023-12-10 16:02:43,731:INFO:Uploading model into container now
+2023-12-10 16:02:43,731:INFO:_master_model_container: 11
+2023-12-10 16:02:43,731:INFO:_display_container: 7
+2023-12-10 16:02:43,731:INFO:<catboost.core.CatBoostClassifier object at 0x299fb7250>
+2023-12-10 16:02:43,731:INFO:create_model() successfully completed......................................
+2023-12-10 16:02:43,816:INFO:SubProcess create_model() end ==================================
+2023-12-10 16:02:43,816:INFO:<catboost.core.CatBoostClassifier object at 0x299fb7250> result for AUC is 0.871
+2023-12-10 16:02:43,816:INFO:<catboost.core.CatBoostClassifier object at 0x29e122fb0> result for AUC is 0.868
+2023-12-10 16:02:43,816:INFO:<catboost.core.CatBoostClassifier object at 0x299fb7250> is best model
+2023-12-10 16:02:43,816:INFO:choose_better completed
+2023-12-10 16:02:43,816:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-12-10 16:02:43,821:INFO:_master_model_container: 11
+2023-12-10 16:02:43,821:INFO:_display_container: 6
+2023-12-10 16:02:43,821:INFO:<catboost.core.CatBoostClassifier object at 0x299fb7250>
+2023-12-10 16:02:43,821:INFO:tune_model() successfully completed......................................
+2023-12-10 16:02:43,901:INFO:Initializing predict_model()
+2023-12-10 16:02:43,901:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x299fb7250>, probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x29e14b520>)
+2023-12-10 16:02:43,901:INFO:Checking exceptions
+2023-12-10 16:02:43,901:INFO:Preloading libraries
+2023-12-10 16:02:43,902:INFO:Set up data.
+2023-12-10 16:02:44,751:INFO:Set up index.
+2023-12-10 16:02:45,848:INFO:Initializing plot_model()
+2023-12-10 16:02:45,848:INFO:plot_model(plot=auc, fold=None, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x299fb7250>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, system=True)
+2023-12-10 16:02:45,848:INFO:Checking exceptions
+2023-12-10 16:02:46,037:INFO:Preloading libraries
+2023-12-10 16:02:46,038:INFO:Copying training dataset
+2023-12-10 16:02:46,038:INFO:Plot type: auc
+2023-12-10 16:02:46,792:INFO:Fitting Model
+2023-12-10 16:02:46,798:INFO:Scoring test/hold-out set
+2023-12-10 16:02:46,965:INFO:Visual Rendered Successfully
+2023-12-10 16:02:47,016:INFO:plot_model() successfully completed......................................
+2023-12-10 16:02:47,052:INFO:Initializing plot_model()
+2023-12-10 16:02:47,052:INFO:plot_model(plot=class_report, fold=None, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x299fb7250>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, system=True)
+2023-12-10 16:02:47,052:INFO:Checking exceptions
+2023-12-10 16:02:47,145:INFO:Preloading libraries
+2023-12-10 16:02:47,146:INFO:Copying training dataset
+2023-12-10 16:02:47,146:INFO:Plot type: class_report
+2023-12-10 16:02:47,774:INFO:Fitting Model
+2023-12-10 16:02:47,777:INFO:Scoring test/hold-out set
+2023-12-10 16:02:47,914:INFO:Visual Rendered Successfully
+2023-12-10 16:02:47,963:INFO:plot_model() successfully completed......................................
+2023-12-10 16:02:47,974:INFO:Initializing plot_model()
+2023-12-10 16:02:47,974:INFO:plot_model(plot=confusion_matrix, fold=None, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x299fb7250>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, system=True)
+2023-12-10 16:02:47,974:INFO:Checking exceptions
+2023-12-10 16:02:48,061:INFO:Preloading libraries
+2023-12-10 16:02:48,062:INFO:Copying training dataset
+2023-12-10 16:02:48,062:INFO:Plot type: confusion_matrix
+2023-12-10 16:02:48,703:INFO:Fitting Model
+2023-12-10 16:02:48,706:INFO:Scoring test/hold-out set
+2023-12-10 16:02:48,809:INFO:Visual Rendered Successfully
+2023-12-10 16:02:48,857:INFO:plot_model() successfully completed......................................
+2023-12-10 16:02:48,870:INFO:Initializing finalize_model()
+2023-12-10 16:02:48,870:INFO:finalize_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x299fb7250>, fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2023-12-10 16:02:48,870:INFO:Finalizing <catboost.core.CatBoostClassifier object at 0x299fb7250>
+2023-12-10 16:02:49,001:INFO:Initializing create_model()
+2023-12-10 16:02:49,001:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x299fb7250>, fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 16:02:49,001:INFO:Checking exceptions
+2023-12-10 16:02:49,002:INFO:Importing libraries
+2023-12-10 16:02:49,002:INFO:Copying training dataset
+2023-12-10 16:02:49,037:INFO:Defining folds
+2023-12-10 16:02:49,037:INFO:Declaring metric variables
+2023-12-10 16:02:49,037:INFO:Importing untrained model
+2023-12-10 16:02:49,037:INFO:Declaring custom model
+2023-12-10 16:02:49,037:INFO:CatBoost Classifier Imported successfully
+2023-12-10 16:02:49,038:INFO:Cross validation set to False
+2023-12-10 16:02:49,038:INFO:Fitting Model
+2023-12-10 16:03:49,369:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HDL', 'LDL', 'hemoglobin',
+                                             'Urine protein',
+                                             'serum creatinine',...
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+'))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x29e1b4250>)],
+         verbose=False)
+2023-12-10 16:03:49,370:INFO:create_model() successfully completed......................................
+2023-12-10 16:03:49,424:INFO:_master_model_container: 11
+2023-12-10 16:03:49,424:INFO:_display_container: 7
+2023-12-10 16:03:49,427:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HDL', 'LDL', 'hemoglobin',
+                                             'Urine protein',
+                                             'serum creatinine',...
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+'))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x29e1b4250>)],
+         verbose=False)
+2023-12-10 16:03:49,427:INFO:finalize_model() successfully completed......................................
+2023-12-10 16:03:49,497:INFO:Initializing predict_model()
+2023-12-10 16:03:49,497:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HDL', 'LDL', 'hemoglobin',
+                                             'Urine protein',
+                                             'serum creatinine',...
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+'))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x29e1b4250>)],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x29cddca60>)
+2023-12-10 16:03:49,497:INFO:Checking exceptions
+2023-12-10 16:03:49,497:INFO:Preloading libraries
+2023-12-10 16:03:49,498:INFO:Set up data.
+2023-12-10 16:03:50,124:INFO:Set up index.
+2023-12-10 16:03:51,757:INFO:Initializing tune_model()
+2023-12-10 16:03:51,757:INFO:tune_model(estimator=<catboost.core.CatBoostClassifier object at 0x29e1b7fd0>, fold=None, round=4, n_iter=20, custom_grid=None, optimize=AUC, custom_scorer=None, search_library=optuna, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>)
+2023-12-10 16:03:51,757:INFO:Checking exceptions
+2023-12-10 16:03:51,757:INFO:Soft dependency imported: optuna: 3.4.0
+2023-12-10 16:03:51,865:INFO:Copying training dataset
+2023-12-10 16:03:52,013:INFO:Checking base model
+2023-12-10 16:03:52,013:INFO:Base model : CatBoost Classifier
+2023-12-10 16:03:52,015:INFO:Declaring metric variables
+2023-12-10 16:03:52,016:INFO:Defining Hyperparameters
+2023-12-10 16:03:52,061:INFO:Tuning with n_jobs=-1
+2023-12-10 16:03:52,061:INFO:Initializing optuna.integration.OptunaSearchCV
+2023-12-10 16:40:52,633:INFO:best_params: {'actual_estimator__eta': 0.30267261079017277, 'actual_estimator__depth': 7, 'actual_estimator__n_estimators': 106, 'actual_estimator__random_strength': 0.6166791934669837, 'actual_estimator__l2_leaf_reg': 7}
+2023-12-10 16:40:52,635:INFO:Hyperparameter search completed
+2023-12-10 16:40:52,635:INFO:SubProcess create_model() called ==================================
+2023-12-10 16:40:52,635:INFO:Initializing create_model()
+2023-12-10 16:40:52,635:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x29ce97d00>, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x2872994e0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'eta': 0.30267261079017277, 'depth': 7, 'n_estimators': 106, 'random_strength': 0.6166791934669837, 'l2_leaf_reg': 7})
+2023-12-10 16:40:52,635:INFO:Checking exceptions
+2023-12-10 16:40:52,635:INFO:Importing libraries
+2023-12-10 16:40:52,635:INFO:Copying training dataset
+2023-12-10 16:40:52,930:INFO:Defining folds
+2023-12-10 16:40:52,930:INFO:Declaring metric variables
+2023-12-10 16:40:52,932:INFO:Importing untrained model
+2023-12-10 16:40:52,932:INFO:Declaring custom model
+2023-12-10 16:40:52,933:INFO:CatBoost Classifier Imported successfully
+2023-12-10 16:40:52,936:INFO:Starting cross validation
+2023-12-10 16:40:52,937:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 16:41:46,239:INFO:Calculating mean and std
+2023-12-10 16:41:46,242:INFO:Creating metrics dataframe
+2023-12-10 16:41:46,249:INFO:Finalizing model
+2023-12-10 16:42:29,204:INFO:Uploading results into container
+2023-12-10 16:42:29,205:INFO:Uploading model into container now
+2023-12-10 16:42:29,205:INFO:_master_model_container: 12
+2023-12-10 16:42:29,205:INFO:_display_container: 9
+2023-12-10 16:42:29,205:INFO:<catboost.core.CatBoostClassifier object at 0x29bfddd20>
+2023-12-10 16:42:29,205:INFO:create_model() successfully completed......................................
+2023-12-10 16:42:29,286:INFO:SubProcess create_model() end ==================================
+2023-12-10 16:42:29,287:INFO:choose_better activated
+2023-12-10 16:42:29,288:INFO:SubProcess create_model() called ==================================
+2023-12-10 16:42:29,288:INFO:Initializing create_model()
+2023-12-10 16:42:29,288:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x29e1b7fd0>, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 16:42:29,288:INFO:Checking exceptions
+2023-12-10 16:42:29,289:INFO:Importing libraries
+2023-12-10 16:42:29,289:INFO:Copying training dataset
+2023-12-10 16:42:29,627:INFO:Defining folds
+2023-12-10 16:42:29,627:INFO:Declaring metric variables
+2023-12-10 16:42:29,627:INFO:Importing untrained model
+2023-12-10 16:42:29,627:INFO:Declaring custom model
+2023-12-10 16:42:29,627:INFO:CatBoost Classifier Imported successfully
+2023-12-10 16:42:29,627:INFO:Starting cross validation
+2023-12-10 16:42:29,628:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-12-10 16:45:12,244:INFO:Calculating mean and std
+2023-12-10 16:45:12,246:INFO:Creating metrics dataframe
+2023-12-10 16:45:12,250:INFO:Finalizing model
+2023-12-10 16:46:02,183:INFO:Uploading results into container
+2023-12-10 16:46:02,183:INFO:Uploading model into container now
+2023-12-10 16:46:02,184:INFO:_master_model_container: 13
+2023-12-10 16:46:02,184:INFO:_display_container: 10
+2023-12-10 16:46:02,184:INFO:<catboost.core.CatBoostClassifier object at 0x299eff700>
+2023-12-10 16:46:02,184:INFO:create_model() successfully completed......................................
+2023-12-10 16:46:02,266:INFO:SubProcess create_model() end ==================================
+2023-12-10 16:46:02,266:INFO:<catboost.core.CatBoostClassifier object at 0x299eff700> result for AUC is 0.871
+2023-12-10 16:46:02,266:INFO:<catboost.core.CatBoostClassifier object at 0x29bfddd20> result for AUC is 0.8669
+2023-12-10 16:46:02,266:INFO:<catboost.core.CatBoostClassifier object at 0x299eff700> is best model
+2023-12-10 16:46:02,266:INFO:choose_better completed
+2023-12-10 16:46:02,267:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-12-10 16:46:02,271:INFO:_master_model_container: 13
+2023-12-10 16:46:02,271:INFO:_display_container: 9
+2023-12-10 16:46:02,271:INFO:<catboost.core.CatBoostClassifier object at 0x299eff700>
+2023-12-10 16:46:02,271:INFO:tune_model() successfully completed......................................
+2023-12-10 16:46:02,357:INFO:Initializing predict_model()
+2023-12-10 16:46:02,357:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x299eff700>, probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x29e14b2e0>)
+2023-12-10 16:46:02,357:INFO:Checking exceptions
+2023-12-10 16:46:02,357:INFO:Preloading libraries
+2023-12-10 16:46:02,360:INFO:Set up data.
+2023-12-10 16:46:03,192:INFO:Set up index.
+2023-12-10 16:46:04,275:INFO:Initializing plot_model()
+2023-12-10 16:46:04,275:INFO:plot_model(plot=auc, fold=None, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x299eff700>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, system=True)
+2023-12-10 16:46:04,275:INFO:Checking exceptions
+2023-12-10 16:46:04,438:INFO:Preloading libraries
+2023-12-10 16:46:04,439:INFO:Copying training dataset
+2023-12-10 16:46:04,439:INFO:Plot type: auc
+2023-12-10 16:46:05,156:INFO:Fitting Model
+2023-12-10 16:46:05,162:INFO:Scoring test/hold-out set
+2023-12-10 16:46:05,325:INFO:Visual Rendered Successfully
+2023-12-10 16:46:05,376:INFO:plot_model() successfully completed......................................
+2023-12-10 16:46:05,434:INFO:Initializing plot_model()
+2023-12-10 16:46:05,434:INFO:plot_model(plot=class_report, fold=None, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x299eff700>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, system=True)
+2023-12-10 16:46:05,434:INFO:Checking exceptions
+2023-12-10 16:46:05,536:INFO:Preloading libraries
+2023-12-10 16:46:05,537:INFO:Copying training dataset
+2023-12-10 16:46:05,537:INFO:Plot type: class_report
+2023-12-10 16:46:06,170:INFO:Fitting Model
+2023-12-10 16:46:06,173:INFO:Scoring test/hold-out set
+2023-12-10 16:46:06,311:INFO:Visual Rendered Successfully
+2023-12-10 16:46:06,360:INFO:plot_model() successfully completed......................................
+2023-12-10 16:46:06,373:INFO:Initializing plot_model()
+2023-12-10 16:46:06,373:INFO:plot_model(plot=confusion_matrix, fold=None, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x299eff700>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, system=True)
+2023-12-10 16:46:06,373:INFO:Checking exceptions
+2023-12-10 16:46:06,458:INFO:Preloading libraries
+2023-12-10 16:46:06,458:INFO:Copying training dataset
+2023-12-10 16:46:06,458:INFO:Plot type: confusion_matrix
+2023-12-10 16:46:07,090:INFO:Fitting Model
+2023-12-10 16:46:07,093:INFO:Scoring test/hold-out set
+2023-12-10 16:46:07,194:INFO:Visual Rendered Successfully
+2023-12-10 16:46:07,242:INFO:plot_model() successfully completed......................................
+2023-12-10 16:46:07,254:INFO:Initializing finalize_model()
+2023-12-10 16:46:07,254:INFO:finalize_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x299eff700>, fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2023-12-10 16:46:07,254:INFO:Finalizing <catboost.core.CatBoostClassifier object at 0x299eff700>
+2023-12-10 16:46:07,399:INFO:Initializing create_model()
+2023-12-10 16:46:07,400:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x299eff700>, fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2023-12-10 16:46:07,400:INFO:Checking exceptions
+2023-12-10 16:46:07,400:INFO:Importing libraries
+2023-12-10 16:46:07,401:INFO:Copying training dataset
+2023-12-10 16:46:07,419:INFO:Defining folds
+2023-12-10 16:46:07,419:INFO:Declaring metric variables
+2023-12-10 16:46:07,419:INFO:Importing untrained model
+2023-12-10 16:46:07,419:INFO:Declaring custom model
+2023-12-10 16:46:07,419:INFO:CatBoost Classifier Imported successfully
+2023-12-10 16:46:07,420:INFO:Cross validation set to False
+2023-12-10 16:46:07,420:INFO:Fitting Model
+2023-12-10 16:47:08,680:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HDL', 'LDL', 'hemoglobin',
+                                             'Urine protein',
+                                             'serum creatinine',...
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+'))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x299f5f850>)],
+         verbose=False)
+2023-12-10 16:47:08,680:INFO:create_model() successfully completed......................................
+2023-12-10 16:47:08,736:INFO:_master_model_container: 13
+2023-12-10 16:47:08,736:INFO:_display_container: 10
+2023-12-10 16:47:08,739:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HDL', 'LDL', 'hemoglobin',
+                                             'Urine protein',
+                                             'serum creatinine',...
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+'))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x299f5f850>)],
+         verbose=False)
+2023-12-10 16:47:08,739:INFO:finalize_model() successfully completed......................................
+2023-12-10 16:47:08,806:INFO:Initializing predict_model()
+2023-12-10 16:47:08,806:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HDL', 'LDL', 'hemoglobin',
+                                             'Urine protein',
+                                             'serum creatinine',...
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+'))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x299f5f850>)],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x29e173760>)
+2023-12-10 16:47:08,806:INFO:Checking exceptions
+2023-12-10 16:47:08,806:INFO:Preloading libraries
+2023-12-10 16:47:08,807:INFO:Set up data.
+2023-12-10 16:47:09,425:INFO:Set up index.
+2023-12-10 16:47:11,067:INFO:Initializing predict_model()
+2023-12-10 16:47:11,067:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HDL', 'LDL', 'hemoglobin',
+                                             'Urine protein',
+                                             'serum creatinine',...
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+'))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x299f5f850>)],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x29e172b00>)
+2023-12-10 16:47:11,067:INFO:Checking exceptions
+2023-12-10 16:47:11,067:INFO:Preloading libraries
+2023-12-10 16:47:11,069:INFO:Set up data.
+2023-12-10 16:47:11,343:INFO:Set up index.
+2023-12-10 16:47:12,234:INFO:Initializing predict_model()
+2023-12-10 16:47:12,234:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HDL', 'LDL', 'hemoglobin',
+                                             'Urine protein',
+                                             'serum creatinine',...
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+'))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x29e1b4250>)],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x29e173760>)
+2023-12-10 16:47:12,234:INFO:Checking exceptions
+2023-12-10 16:47:12,234:INFO:Preloading libraries
+2023-12-10 16:47:12,235:INFO:Set up data.
+2023-12-10 16:47:12,450:INFO:Set up index.
+2023-12-10 16:47:13,162:INFO:Initializing predict_model()
+2023-12-10 16:47:13,162:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=<catboost.core.CatBoostClassifier object at 0x29e1b7fd0>, probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x29e1729e0>)
+2023-12-10 16:47:13,162:INFO:Checking exceptions
+2023-12-10 16:47:13,163:INFO:Preloading libraries
+2023-12-10 16:47:13,164:INFO:Set up data.
+2023-12-10 16:47:13,380:INFO:Set up index.
+2023-12-10 16:47:13,729:INFO:Initializing predict_model()
+2023-12-10 16:47:13,729:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28713cb80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['age', 'height(cm)', 'weight(kg)',
+                                             'waist(cm)', 'eyesight(left)',
+                                             'eyesight(right)', 'hearing(left)',
+                                             'hearing(right)', 'systolic',
+                                             'relaxation',
+                                             'fasting blood sugar',
+                                             'Cholesterol', 'triglyceride',
+                                             'HDL', 'LDL', 'hemoglobin',
+                                             'Urine protein',
+                                             'serum creatinine',...
+                                                              verbose='deprecated'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+'))),
+                ('actual_estimator',
+                 <catboost.core.CatBoostClassifier object at 0x299faa470>)],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x29e1725f0>)
+2023-12-10 16:47:13,729:INFO:Checking exceptions
+2023-12-10 16:47:13,729:INFO:Preloading libraries
+2023-12-10 16:47:13,730:INFO:Set up data.
+2023-12-10 16:47:13,941:INFO:Set up index.
